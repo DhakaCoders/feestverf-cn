@@ -1,0 +1,36 @@
+/*
+-----------------
+-----------------
+*/
+.ftr-col-inr{
+	background: #f8f8f8;
+	padding: 17px 20px 14px 12px;
+	margin-top: -1px;
+}
+.ftr-col-lft{
+	float: left;
+}
+.ftr-col-lft p{
+	font-size: 15px;
+	line-height: 17px;
+	color: #7d7d7d;
+	font-family: 'RobotoLight';
+	margin: 0;
+}
+.ftr-col-rgt{
+	float: right;
+}
+.ftr-col-rgt ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ftr-col-rgt ul li{
+	float: left;
+}
+.ftr-col-rgt ul li a{
+	font-size: 15px;
+	line-height: 17px;
+	font-family: 'RobotoLight';
+	color: #020303;
+}

@@ -1,0 +1,123 @@
+/*
+---------------------
+main-content-sec-wrp
+---------------------
+*/
+.main-content-wrp{
+	background: #fff;
+	padding-top: 15px;
+}
+.main-content-lft{
+	float: left;
+	width: 18%;
+}
+.main-content-lft-dsc span{
+	display:block;
+	font-size: 15px;
+	line-height: 17px;
+	color: #338dc9;
+	font-family: 'RobotoMedium';
+	padding-left: 12px;
+	padding-bottom: 12px;
+}
+.main-content-lft-dsc > a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 17px;
+	line-height: 19px;
+	color: #fff;
+	background: #e50051;
+	font-family: 'RobotoBlack';
+	padding: 7px 14px 9px 11px;
+	margin-bottom: 9px;
+	margin-left: 2px;
+}
+.main-content-lft-dsc ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+.main-content-lft-dsc ul li{
+	font-size: 12px;
+	line-height: 14px;
+}
+.main-content-lft-dsc ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #91acd2;
+	font-family: 'RobotoMedium';
+}
+.main-content-rgt{
+	float: right;
+	width: 82%;
+	padding-right: 55px;
+}
+.main-content-top{
+	padding-bottom: 43px;
+}
+.main-content-btm h2,
+.main-content-btm h3,
+.main-content-btm h1,
+.main-content-top h2,
+.main-content-top h3,
+.main-content-top h1{
+	margin: 0;
+	color: #000;
+	margin-bottom: 20px;
+}
+.main-content-btm h5,
+.main-content-top h5{
+	margin: 0;
+	font-size: 15px;
+	line-height: 17px;
+}
+.product-grid-wrp ul{
+	list-style: none;
+	margin: 0 -8px;
+	padding: 0;
+}
+.product-grid-wrp ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 8px 22px;
+}
+.product-grid-img{
+	position: relative;
+}
+.product-grid-img img{
+	width: 100%;
+}
+.product-grid-img a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.product-grid-title{
+	background: #e50051;
+	padding: 10px 10px;
+	margin-top: 5px;
+}
+.product-grid-title h5{
+	margin: 0;
+	font-size: 15px;
+	line-height: 17px;
+	color: #fff;
+	font-family: 'RobotoLight';
+}
+.main-content-btm{
+	padding-top: 10px;
+}
+.main-content-btm span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 15px;
+	line-height: 17px;
+	font-family: 'RobotoMedium';
+
+}
