@@ -92,6 +92,9 @@ header
 	right: 18px;
 	top: 12px;
 }
+.nav-opener-inr{
+	cursor: pointer;
+}
 .nav-opener-inr strong{
 	display: inline-block;
 	vertical-align: baseline;
