@@ -36,6 +36,18 @@ $('.nav-opener-inr').on('click',function(){
   $('.main-nav ul').slideToggle(500);
 });
 
+if (windowWidth <= 767) {
+  $('.nav-opener-xs-inr').on('click', function(){
+    $('.nav-menu-xs').fadeIn(500);
+    $('.nav-menu-xs').addClass('add-cls-show');
+  });
+  $('.close-btn').on('click', function(){
+    $('.nav-menu-xs').fadeOut(500);
+    $('.nav-menu-xs').removeClass('add-cls-show');
+  });
+
+}
+
 
 /**
 Responsive on 767px

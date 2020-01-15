@@ -2,10 +2,10 @@
 -----------------
 -----------------
 */
-.ftr-col-inr{
-	background: #f8f8f8;
-	padding: 17px 20px 14px 12px;
-	margin-top: -1px;
+.ftr-col-inr {
+    background: #f8f8f8;
+    padding: 14px 20px 15px 12px;
+    margin-top: -1px;
 }
 .ftr-col-lft{
 	float: left;
@@ -33,4 +33,74 @@
 	line-height: 17px;
 	font-family: 'RobotoLight';
 	color: #020303;
+	position: relative;
+	padding: 0 6px;
+}
+.ftr-col-rgt ul li a:after {
+    content: "";
+    width: 4px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+}
+.ftr-col-rgt ul li:first-child a:after{
+	content: none;
+}
+.ftr-col-rgt ul li a:hover{
+	color: #e30613;
+}
+
+/*
+------------------
+ Responsive Css
+------------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	
+
+}
+
+@media(max-width: 991px){
+	
+	
+}
+
+@media(max-width: 767px){
+	.ftr-col-rgt {
+	    float: none;
+	    text-align: center;
+	}
+	.ftr-col-rgt ul li {
+	    display: inline-block;
+	    vertical-align: baseline;
+	    float: none;
+	}
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
