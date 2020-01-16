@@ -41,8 +41,7 @@ main-content-sec-wrp
 	margin-left: 2px;
 }
 .main-content-lft-dsc ul li a:hover{
-	background: #e30613;
-	color: #0a8731;
+	background: #d0074e;
 }
 .main-content-lft-list ul{
 	list-style: none;
@@ -213,8 +212,6 @@ main-content-sec-wrp
 		padding-right: 15px;
 		border-top: 1px solid #ededed;
 		border-bottom: 1px solid #ededed;
-		padding-top: 13px;
-		padding-bottom: 15px;
 		margin-bottom: 12px;
 	}
 	.main-content-btm h4{
@@ -241,15 +238,14 @@ main-content-sec-wrp
 		font-weight: 300;
 		border:0 !important;
 		border-radius: 0 !important;
-		padding: 0;
+		padding:13px 0 15px;
 		padding-left: 40px;
 		background: transparent;
 		min-width: 100% !important;
-    	height: 25px;
     	background-image: url(../images/select-angle.png);
 		background-repeat: no-repeat;
 		background-size: 15px 8px;
-		background-position: left 5px top 10px;
+		background-position: left 5px top 22px;
 	}
 	
 	.news-grid-select-3 .btn-default:hover{
@@ -259,7 +255,7 @@ main-content-sec-wrp
 	.news-grid-select-3 .btn-light:not(:disabled):not(.disabled):active,
 	.news-grid-select-3 .show>.btn-light.dropdown-toggle{
 		background-color: #fff !important;
-		border:1px solid #d1d1d1 !important;
+		border:0 !important;
 		border-bottom:0 !important;
 	}
 	.news-grid-select-3 .dropdown-menu{
@@ -271,7 +267,7 @@ main-content-sec-wrp
 		color: #575656;
 		font-weight: 300;
 		border-radius: 0;
-		border:1px solid #d1d1d1;
+		border:0 !important;
 		border-top:0;
 		box-shadow: none;
 	}

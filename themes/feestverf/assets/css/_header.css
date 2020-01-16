@@ -48,7 +48,7 @@ header
 }
 .hdr-middel ul li{
 	float: left;
-	padding: 0 17px;
+	padding: 0 17px 0 28px;
 }
 .hdr-middel ul li a{
 	display: inline-block;
@@ -58,7 +58,6 @@ header
 	line-height: 18px;
 	font-weight: 500;
 	color: #fff;
-	padding-left: 28px;
 }
 .hdr-lft a:hover,
 .hdr-middel ul li a:hover{
