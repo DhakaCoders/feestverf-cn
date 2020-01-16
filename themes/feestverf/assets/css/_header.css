@@ -30,7 +30,7 @@ header
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 	position: relative;
 	padding-left: 28px;
 }
@@ -56,7 +56,7 @@ header
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 	color: #fff;
 	padding-left: 28px;
 }
@@ -98,7 +98,7 @@ header
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 	margin-top: -5px;
 	padding-left: 10px;
 }
@@ -286,7 +286,7 @@ nav.main-nav ul li a:hover{
 	    font-size: 20px;
 	    line-height: 22px;
 	    color: #fff;
-	    font-family: 'RobotoMedium';
+	    font-family: 'Roboto-Medium';
 	    margin-top: -4px;
 	    padding-left: 0;
 	    padding-right: 15px;
