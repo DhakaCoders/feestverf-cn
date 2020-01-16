@@ -3,17 +3,14 @@
 1. https://www.screencast.com/t/gSAyPOKd
 - ai icon ta psd ar moto na. Exzact koro
 
-2. https://www.screencast.com/t/sEJI0PFxAmrW
-- ai font gulo mota mota lagtece. Onno akta roboto medium font use kore thik koro
-
-3. https://www.screencast.com/t/bvdPRGaQSsF5
+2. https://www.screencast.com/t/bvdPRGaQSsF5
 - Dropdown menu ta psd te dekho ni. Ai simple design a vul hoy kivabe? 
 
-4. https://www.screencast.com/t/qZmZtNzmX
+3. https://www.screencast.com/t/qZmZtNzmX
 - img puro ta te akta link hobe. Puro title a akta link hobe. Ar cart icon ar link ta z-index diye opore thakbe.
 - Hover effect lagbe
 
-5. https://www.screencast.com/t/5I5Hg3oow
+4. https://www.screencast.com/t/5I5Hg3oow
 - Akhane 2 ta block. Opoer tar title ar por ul li a. Ar nicher ta te normal content hobe (title, text)
 
 
@@ -23,6 +20,3 @@
 
 2. https://www.screencast.com/t/nsNJcp3rsNb
 - adike click kora jay na.
-
-3. https://www.screencast.com/t/qE7b044kMaF
-Icon gulo khub choto na kore 'menu openen' text ta hide kore dao. Dekte valo lagbe.
