@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Roboto-Regular';
+    font-family: 'RobotoRegular';
     src: url('RobotoRegular/RobotoRegular.eot');
     src: url('RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),
          url('RobotoRegular/RobotoRegular.woff2') format('woff2'),
@@ -9,13 +9,13 @@
 }
 
 @font-face {
-    font-family: 'RobotoMedium';
-    src: url('RobotoMedium/RobotoMedium.eot');
-    src: url('RobotoMedium/RobotoMedium.eot') format('embedded-opentype'),
-         url('RobotoMedium/RobotoMedium.woff2') format('woff2'),
-         url('RobotoMedium/RobotoMedium.woff') format('woff'),
-         url('RobotoMedium/RobotoMedium.ttf') format('truetype'),
-         url('RobotoMedium/RobotoMedium.svg#RobotoMedium') format('svg');
+    font-family: 'Roboto-Medium';
+    src: url('Roboto-Medium/RobotoMedium.eot');
+    src: url('Roboto-Medium/RobotoMedium.eot') format('embedded-opentype'),
+         url('Roboto-Medium/RobotoMedium.woff2') format('woff2'),
+         url('Roboto-Medium/RobotoMedium.woff') format('woff'),
+         url('Roboto-Medium/RobotoMedium.ttf') format('truetype'),
+         url('Roboto-Medium/RobotoMedium.svg#RobotoMedium') format('svg');
 }
 
 @font-face {

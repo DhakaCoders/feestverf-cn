@@ -152,7 +152,7 @@ img{
 	line-height: 0;
 	font-size: 0;
 }
-.overlay-link{
+.product-grid-img > a.overlay-link{
 	position: absolute;
 	left: 0;
 	top: 0;

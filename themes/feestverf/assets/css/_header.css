@@ -40,10 +40,6 @@ header
 	background-size: 19px 13px;
 	background-position: left top 3px;
 }
-/*.hdr-middel{
-	padding-left: 29%;
-	padding-right: 29%;
-}*/
 .hdr-middel ul{
 	list-style: none;
 	margin: 0 auto;
@@ -78,7 +74,7 @@ header
 	background: url(../images/cart-icon.png);
 	background-repeat: no-repeat;
 	background-size: 17px 18px;
-	background-position: left top 3px;
+	background-position: left top;
 }
 .hdr-mid-profile-icon{
 	background: url(../images/profile-icon.png);
@@ -142,7 +138,7 @@ nav.main-nav ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	background: #fff;
+	background:rgba(210,220,235,0.5);
 	width: 175px;
 	padding-left: 10px;
 	padding-right: 20px;
@@ -150,22 +146,25 @@ nav.main-nav ul{
 	left: 15px;
 	top: 25px;
 	padding-top: 7px;
-	border-left: 2px solid #2189ca;
 	display: none;
 	z-index: 1;
 }
-nav.main-nav ul:after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 1px;
-	height:100%;
-	background: #2189ca;
+nav.main-nav ul::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 95%;
+    background: #2189ca;
 }
 nav.main-nav ul li{
 	padding-bottom: 10px;
+}
+nav.main-nav ul li.prd-tp-btm {
+    padding-top: 12px;
+    padding-bottom: 22px;
 }
 nav.main-nav ul li a{
 	display: inline-block;
@@ -245,7 +244,7 @@ nav.main-nav ul li a:hover{
 	.hdr-rgt {
 	    position: absolute;
 	    right: 24px;
-	    top: 18px;
+	    top: 20px;
 	}
 	.hdr-lft-xs ul{
 		list-style: none;
@@ -276,6 +275,9 @@ nav.main-nav ul li a:hover{
 	}
 	.hdr-lft-xs ul li:first-child a{
 		padding-top: 4px;
+	}
+	.hdr-lft-xs ul li:last-child a{
+		padding-top: 3px;
 	}
 	.nav-opener-xs-inr strong {
 	    display: inline-block;
@@ -325,7 +327,7 @@ nav.main-nav ul li a:hover{
 	    left: 0;
 	    right: 0;
 	    top: 100%;
-	    z-index: 1;
+	    z-index: 2;
 	    padding: 30px 30px;
 	    display: none;
 	    margin-top: -1px;
@@ -391,36 +393,12 @@ nav.main-nav ul li a:hover{
 	.hdr-lft-xs ul li {
 	    padding: 0 10px;
 	}
-	.hdr-lft-xs ul li:nth-child(1) a img{
-		max-width: 25px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(2) a img{
-		max-width: 14px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(3) a img{
-		max-width: 22px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(4) a img{
-		max-width: 25px;
-		width: 100%;
-	}
+	
 	.nav-opener-xs-inr strong {
-	    font-size: 17px;
-	    line-height: 19px;
-	    margin-top: -2px;
-	    padding-right: 10px;
+	    display: none;
 	}
 	.hdr-rgt {
 	    right: 10px;
-	}
-	.hdr-lft-xs ul li:after {
-	    height: 30px;
-	}
-	.hdr-lft-xs ul li a{
-		padding-top: 0;
 	}
 	.logo a img:first-child{
 		display: none;
@@ -432,30 +410,5 @@ nav.main-nav ul li a:hover{
 }
 
 @media(max-width: 359px){
-	.hdr-lft-xs ul li:nth-child(1) a img{
-		max-width: 22px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(2) a img{
-		max-width: 12px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(3) a img{
-		max-width: 19px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li:nth-child(4) a img{
-		max-width: 22px;
-		width: 100%;
-	}
-	.hdr-lft-xs ul li {
-	    padding: 0 6px;
-	}
-	.hdr-lft-xs ul li:after {
-	    height: 27px;
-	}
-	.hdr-lft-xs ul li:first-child a {
-	    padding-top: 1px;
-	}
 }
 

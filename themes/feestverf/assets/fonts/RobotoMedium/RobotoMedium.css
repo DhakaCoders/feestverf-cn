@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RobotoMedium';
-    src: url('RobotoMedium/RobotoMedium.eot');
-    src: url('RobotoMedium/RobotoMedium.eot') format('embedded-opentype'),
-         url('RobotoMedium/RobotoMedium.woff2') format('woff2'),
-         url('RobotoMedium/RobotoMedium.woff') format('woff'),
-         url('RobotoMedium/RobotoMedium.ttf') format('truetype'),
-         url('RobotoMedium/RobotoMedium.svg#RobotoMedium') format('svg');
-}
