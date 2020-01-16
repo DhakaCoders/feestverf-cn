@@ -14,7 +14,7 @@
 	font-size: 15px;
 	line-height: 17px;
 	color: #7d7d7d;
-	font-family: 'RobotoLight';
+	font-weight: 300;
 	margin: 0;
 }
 .ftr-col-rgt{
@@ -31,7 +31,7 @@
 .ftr-col-rgt ul li a{
 	font-size: 15px;
 	line-height: 17px;
-	font-family: 'RobotoLight';
+	font-weight: 300;
 	color: #020303;
 	position: relative;
 	padding: 0 6px;
