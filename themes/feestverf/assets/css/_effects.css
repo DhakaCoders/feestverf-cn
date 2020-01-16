@@ -1,11 +1,13 @@
 /**
 All Transitions
 */
+.product-grid-inr:hover .product-grid-img img,
 a,input,img,textarea,button{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.product-grid-inr:hover .product-grid-img img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
