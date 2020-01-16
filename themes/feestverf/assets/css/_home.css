@@ -40,7 +40,7 @@ main-content-sec-wrp
 	margin-bottom: 9px;
 	margin-left: 2px;
 }
-.main-content-lft-dsc > a:hover{
+.main-content-lft-dsc ul li a:hover{
 	background: #e30613;
 	color: #0a8731;
 }
