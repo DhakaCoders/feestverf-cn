@@ -16,7 +16,7 @@ main-content-sec-wrp
 	font-size: 15px;
 	line-height: 17px;
 	color: #338dc9;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 	padding-left: 12px;
 	padding-bottom: 12px;
 }
@@ -52,7 +52,7 @@ main-content-sec-wrp
 	vertical-align: baseline;
 	text-decoration: none;
 	color: #91acd2;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 }
 .main-content-rgt{
 	float: right;
@@ -145,7 +145,7 @@ main-content-sec-wrp
 	vertical-align: baseline;
 	font-size: 15px;
 	line-height: 17px;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto-Medium';
 
 }
 
