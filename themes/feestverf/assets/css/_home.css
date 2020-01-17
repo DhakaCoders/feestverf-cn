@@ -92,13 +92,13 @@ main-content-sec-wrp
 }
 .product-grid-wrp ul{
 	list-style: none;
-	margin: 0 -8px;
-	padding: 0;
+	margin: 0 -8px !important;
+	padding: 0 !important;
 }
 .product-grid-wrp ul li{
 	float: left;
-	width: 33.3333%;
-	padding: 0 8px 22px;
+	width: 33.3333% !important;
+	padding: 0 8px 22px !important;
 }
 .product-grid-img{
 	position: relative;
@@ -155,7 +155,10 @@ main-content-sec-wrp
 	font-weight: 500;
 
 }
-
+.woocommerce ul.products li.product .button {
+    margin-top: 0em !important;
+    padding: 0 !important;
+}
 /*
 ------------------
  Responsive Css

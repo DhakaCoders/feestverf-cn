@@ -28,30 +28,27 @@ add_action('woocommerce_after_main_content', 'get_custom_wc_output_content_wrapp
 function get_custom_wc_output_content_wrapper(){
 
 	if(is_shop() OR is_product_category()){ $customClass = ' product-cat-sec'; $controlClass = ' cat-controller product-des-controller';}elseif(is_product()){$customClass = ' product-des-sec';$controlClass = ' product-des-controller'; }else{ $customClass = ''; $controlClass = '';}
-	echo '<section class="main-content'.$customClass.'"><div class="container"><div class="row"><div class="col-12"><div class="wccontent-inner'.$controlClass.' clearfix">';
-	if(is_product_category()){
-        $cate = get_queried_object();
-        $tcontent = get_field('top_content', 'product_cat' . '_' . $cate->term_id);
-        //var_dump($tcontent);
-        if(!empty($tcontent)):
-        echo '<div class="product-cat-top-block">';
-         echo do_shortcode( $tcontent->post_content );
-        echo '</div>';
-        endif;
-	}
+	echo '<section class="main-content-sec-wrp'.$customClass.'"><div class="container"><div class="row"><div class="col-12"><div class="main-content-wrp'.$controlClass.' clearfix">';
+    echo '<div class="main-content-lft hide-sm">
+              <div class="main-content-lft-dsc">
+                <span>Assortiment:</span>
+                <ul class="clearfix">
+                  <li><a href="#">Feestverf</a></li>
+                  <li><a href="#">Category 2</a></li>
+                </ul>
+              </div>
+              <div class="main-content-lft-list">
+                <ul>
+                  <li><a href="#">custom html under</a></li>
+                  <li><a href="#">category list</a></li>
+                </ul>
+              </div>
+            </div>';
+        echo '<div class="main-content-rgt">';
 }
 
 function get_custom_wc_output_content_wrapper_end(){
-    if(is_product_category()){
-        $cate = get_queried_object();
-        $bcontent = get_field('bottom_content', 'product_cat' . '_' . $cate->term_id);
-        if(!empty($bcontent)):
-        echo '<hr/><div class="cat-page-dft-blc">';
-         echo do_shortcode( $bcontent->post_content );
-        echo '</div>';
-        endif;
-    }
-	echo '</div></div></div></div></section>';
+	echo '</div></div></div></div></div></section>';
 }
 
 
@@ -71,43 +68,13 @@ remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_l
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
-// change a number of the breadcrumb defaults.
-add_filter( 'woocommerce_breadcrumb_defaults', 'fl_woocommerce_breadcrumbs' );
-if( !function_exists('fl_woocommerce_breadcrumbs')):
-function fl_woocommerce_breadcrumbs() {
-    return array(
-            'delimiter'   => '',
-            'wrap_before' => '<ul class="ulc wc clearfix">',
-            'wrap_after'  => '</ul>',
-            'before'      => '<li>',
-            'after'       => '</li>',
-            'home'        => _x( 'home', 'breadcrumb', 'woocommerce' ),
-        );
-}
-endif;
-
-// change a number of the breadcrumb defaults.
-add_filter( 'woocommerce_breadcrumb_defaults', 'fl_woocommerce_breadcrumbs' );
-if( !function_exists('fl_woocommerce_breadcrumbs')):
-function fl_woocommerce_breadcrumbs() {
-    return array(
-            'delimiter'   => '',
-            'wrap_before' => '<ul>',
-            'wrap_after'  => '</ul>',
-            'before'      => '<li>',
-            'after'       => '</li>',
-            'home'        => _x( 'home', 'breadcrumb', 'woocommerce' ),
-        );
-}
-endif;
-
 /**
  * Change number or products per row to 3
  */
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
     function loop_columns() {
-        return 1; // 3 products per row
+        return 3; // 3 products per row
     }
 }
 
@@ -121,29 +88,22 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         if(!empty($thumb_id)){
             $product_thumb = cbv_get_image_tag($thumb_id, 'prodgrid');
         }
-        $sh_desc = $product->get_short_description();
-        echo '<div class="pro-cat-block-head clearfix">
-        <div class="des-head-blc-lft">
-        <i>'.$product_thumb.'</i>
-        <h2>'.get_the_title().'</h2>
+		echo '<div class="product-grid-inr">
+        <div class="product-grid-img"><a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>';
+        echo $product_thumb;
+        woocommerce_template_loop_add_to_cart( );
+        echo '</div>
+        <div class="product-grid-title">
+        <h5><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h5>
         </div>
-        <div class="des-head-blc-mid">
-        <span>Bruto prijs:</span>
-        <strong>'.$product->get_price_html().',-</strong>
-        </div>
-        <div class="des-head-blc-rgt">
-        <a href="'.get_permalink( $product->get_id() ).'">Product weergeven </a>
-        </div>
-        </div>
-        <div class="pro-cat-block-des">'.wpautop( $sh_desc ).'</div>';
-		
+        </div>';
 	}
 }
 
 add_action('woocommerce_before_shop_loop', 'shop_loop_custom_wrapper_start', 30, 2);
 add_action('woocommerce_after_shop_loop', 'shop_loop_custom_wrapper_end', 10, 2);
 function shop_loop_custom_wrapper_start(){
-    echo '<div class="product-cat-block-wrp">';
+    echo '<div class="product-grid-wrp">';
 }
 
 function shop_loop_custom_wrapper_end(){
