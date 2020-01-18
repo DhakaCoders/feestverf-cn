@@ -67,7 +67,7 @@ main-content-sec-wrp
 	padding-right: 55px;
 }
 .main-content-top{
-	padding-bottom: 43px;
+	padding-bottom: 26px;
 }
 .main-content-lft-list h4,
 .main-content-lft-list h3,
@@ -84,11 +84,12 @@ main-content-sec-wrp
 	margin-bottom: 20px;
 }
 .main-content-lft-list h5,
-.main-content-btm h5,
-.main-content-top h5{
+.main-content-btm,
+.main-content-top{
 	margin: 0;
 	font-size: 15px;
 	line-height: 17px;
+	font-weight: 500;
 }
 .product-grid-wrp ul{
 	list-style: none;
@@ -160,6 +161,38 @@ main-content-sec-wrp
     margin-top: 0em !important;
     padding: 0 !important;
 }
+
+.main-content-lft-dsc .textwidget {
+    clear: both;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    color: #91acd2;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+.main-content-lft-dsc .textwidget ul li {
+    display: block;
+}
+
+.main-content-lft-dsc .textwidget ul li a {
+    background: transparent;
+    display: block !important;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #91acd2;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+.main-content-lft-dsc .textwidget ul li a:hover {
+    background: transparent;
+}
+
 /*
 ------------------
  Responsive Css
@@ -198,8 +231,11 @@ main-content-sec-wrp
 	}
 	.main-content-top{
 		padding-left: 15px;
+		font-size: 18px;
+	    line-height: 20px;
+	    color: #7e7e7e;
 	}
-	.main-content-top h2{
+	.main-content-top h2, .main-content-top h1{
 		font-weight: 400;
 	}
 	.main-content-top h4{
@@ -229,6 +265,10 @@ main-content-sec-wrp
 	    border-top: 1px solid #e4e4e4;
 	    padding-top: 20px;
 	    margin-top: 15px;
+	    font-weight: 300;
+	    color: #97979b;
+	    text-align: center;
+	    font-size: 21px;
 	}
 	.news-grid-select-3{
 		position: relative;

@@ -22,10 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        //add_theme_support( 'wc-product-gallery-zoom' );
-        //add_theme_support( 'wc-product-gallery-lightbox' );
-        //add_theme_support( 'wc-product-gallery-slider' );
-        //add_image_size( 'hcatgrid', 294, 234, true );
+        add_image_size( 'prodgrid', 278, 210, true );
 
 		
 		// add size to media uploader
@@ -69,7 +66,6 @@ Includes->>
 */
 include_once(THEME_DIR .'/inc/widgets-area.php');
 include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/breadcrumbs.php');
 include_once(THEME_DIR .'/inc/wc-functions.php');
 
 /**
@@ -112,15 +108,6 @@ return $query;
 }
  
 add_filter('pre_get_posts','searchfilter');
-
-function wpb_change_search_url() {
-    if ( is_search() && ! empty( $_GET['s'] ) ) {
-        wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
-        exit();
-    }   
-}
-//add_action( 'template_redirect', 'wpb_change_search_url' );
-
 
 function defer_parsing_of_js ( $url ) {
     if ( FALSE === strpos( $url, '.js' ) ) return $url;

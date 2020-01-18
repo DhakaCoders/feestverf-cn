@@ -31,35 +31,29 @@ function get_custom_wc_output_content_wrapper(){
 	echo '<section class="main-content-sec-wrp'.$customClass.'"><div class="container"><div class="row"><div class="col-12"><div class="main-content-wrp'.$controlClass.' clearfix">';
     echo '<div class="main-content-lft hide-sm"><div class="main-content-lft-dsc clearfix">';
     if ( is_active_sidebar( 'dshop-widget' ) ) dynamic_sidebar( 'dshop-widget' );
-    echo '</div><div class="main-content-lft-list">
-                <ul>
-                  <li><a href="#">custom html under</a></li>
-                  <li><a href="#">category list</a></li>
-                </ul>
-              </div>
-            </div>';
+    echo '</div></div>';
 
     echo '<div class="main-content-rgt">';
     if(is_product_category()):
-    echo '<div class="main-content-top">
-    <h1 class="hide-sm">Custom title</h1>
-    <h2 class="show-sm">Custom homepage title</h2>
-    <h5 class="hide-sm">Text custom</h5>
-    <h4 class="show-sm">Custom html for homepage</h4>
-    </div>';
+        $cate = get_queried_object();
+        $gettop_content = get_field('tcontent', 'product_cat' . '_' . $cate->term_id);
+        echo '<div class="main-content-top">';
+            if(!empty($gettop_content)) echo wpautop( $gettop_content );
+        echo '</div>';
 
-    echo '<div class="product-select show-sm"> <div class="news-grid-select-3">';
-    pcategory_dropdown();
-    echo '</div></div>';
+        echo '<div class="product-select show-sm"> <div class="news-grid-select-3">';
+        pcategory_dropdown();
+        echo '</div></div>';
     endif;
 }
 
 function get_custom_wc_output_content_wrapper_end(){
     if(is_product_category()):
-    echo '<div class="main-content-btm">
-        <span class="hide-sm">< html box for bottom on the homepage ></span>
-        <h4 class="show-sm">Custom html</h4>';
-    echo '</div>';
+        $cate = get_queried_object();
+        $getbtm_content = get_field('bcontent', 'product_cat' . '_' . $cate->term_id);
+        echo '<div class="main-content-btm">';
+            if(!empty($getbtm_content)) echo wpautop( $getbtm_content );
+        echo '</div>';
     endif;
 	echo '</div></div></div></div></div></section>';
 }
@@ -144,16 +138,6 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-
-//add_action('woocommerce_single_product_summary', 'add_custom_short_text', 5, 2);
-function add_custom_short_text(){
-    global $product;
-    $sh_desc = $product->get_short_description();
-    if(empty($sh_desc)) return;
-    echo '<div class="wcshort-desc">';
-    echo $sh_desc;
-    echo '</div>';
-}
 
 add_action('woocommerce_single_product_summary', 'add_custom_box_product_summary', 5);
 if (!function_exists('add_custom_box_product_summary')) {
