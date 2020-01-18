@@ -119,6 +119,7 @@ main-content-sec-wrp
     background-size: 17px 17px;
     width: 17px;
     height: 17px;
+    padding: 0 !important;
     z-index: 12;
     transition:all 0.5s;
     -ms-transition:all 0.5s;

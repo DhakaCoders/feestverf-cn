@@ -1,0 +1,10 @@
+2020-01-18T12:33:04+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_html_price() in E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\feestverf-cn\themes\feestverf\inc\wc-functions.php:170
+Stack trace:
+#0 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\wp-includes\class-wp-hook.php(288): add_custom_box_product_summary('')
+#1 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\feestverf-cn\themes\feestverf\woocommerce\content-single-product.php(60): do_action('woocommerce_sin...')
+#4 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\wp-includes\template.php(724): require('E:\\SERVER\\XAMPP...')
+#5 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\feestverf-cn\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('E:\\SERVER\\XAMPP...', false)
+#6 E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\feestverf-cn\plugins\woocommerce\templa in E:\SERVER\XAMPP1\htdocs\2020\01\feestverf\feestverf-cn\themes\feestverf\inc\wc-functions.php on line 170
+

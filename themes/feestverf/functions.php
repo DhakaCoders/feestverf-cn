@@ -22,7 +22,9 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
- 
+        //add_theme_support( 'wc-product-gallery-zoom' );
+        //add_theme_support( 'wc-product-gallery-lightbox' );
+        //add_theme_support( 'wc-product-gallery-slider' );
         //add_image_size( 'hcatgrid', 294, 234, true );
 
 		
@@ -52,6 +54,7 @@ add_action( 'after_setup_theme', 'cbv_theme_setup' );
 Enqueue Scripts->>
 */
 function cbv_theme_scripts(){
+    include_once( THEME_DIR . '/enq-scripts/popper.php' );
 	include_once( THEME_DIR . '/enq-scripts/bootstrap.php' );
 	include_once( THEME_DIR . '/enq-scripts/fonts.php' );
     include_once( THEME_DIR . '/enq-scripts/fancybox.php' );

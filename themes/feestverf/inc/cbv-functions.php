@@ -72,3 +72,26 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+function pcategory_dropdown(){
+  $args = array(
+  'option_none_value'  => '-1',
+  'orderby'            => 'ID',
+  'order'              => 'ASC',
+  'show_count'         => 0,
+  'hide_empty'         => 1,
+  'child_of'           => 0,
+  'echo'               => 0,
+  'selected'           => 0,
+  'hierarchical'       => 1,
+  'name'               => 'product_cat',
+  'class'              => 'selectpicker clearfix',
+  'depth'              => 0,
+  'tab_index'          => 0,
+  'taxonomy'           => 'product_cat',
+  'hide_if_empty'      => true,
+  'value_field'      => 'slug',
+  ); 
+
+ echo wp_dropdown_categories( $args );
+}

@@ -142,4 +142,39 @@ function initialize(){
 google.maps.event.addDomListener(window, 'load', initialize);
 
 }
+
+//counter button
+if( $('.qty-v2').length ){
+  $('.qty-v2').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"].qty'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input.qty").val(newVal);
+      spinner.find("input.qty").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input.qty").val(newVal);
+      spinner.find("input.qty").trigger("change");
+    });
+
+  });
+}  
 })(jQuery);
